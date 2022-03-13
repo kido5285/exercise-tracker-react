@@ -12,7 +12,7 @@ const Homepage = () => {
 
   async function fetchExercises(){
       try {
-          const res = await fetch('http://localhost:3111');
+          const res = await fetch('https://node-api091.herokuapp.com/');
           const data = await res.json();
           setExercises(data);
           console.log(data);

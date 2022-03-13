@@ -18,7 +18,7 @@ const EditExercise = () => {
   let navigator = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3111/${id}`).then(res => res.json()).then(data => {
+    fetch(`https://node-api091.herokuapp.com/${id}`).then(res => res.json()).then(data => {
         setExercise({
             title: data.title,
             details: data.details
@@ -28,7 +28,7 @@ const EditExercise = () => {
 
   const edit = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:3111/edit/${id}`, {
+    fetch(`https://node-api091.herokuapp.com/edit/${id}`, {
       method: "POST", 
       body: JSON.stringify(exercise),
       headers: {

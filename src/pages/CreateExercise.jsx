@@ -24,7 +24,7 @@ const CreateExercise = () => {
       completed: false,
       id: Math.floor(Math.random() * 10000)
     }
-    fetch('http://localhost:3111/create', {
+    fetch('https://node-api091.herokuapp.com/create', {
       method: "POST", 
       body: JSON.stringify(newExercise),
       headers: {
