@@ -12,7 +12,7 @@ const Homepage = () => {
 
   async function fetchExercises(){
       try {
-          const res = await fetch('https://node-api091.herokuapp.com/');
+          const res = await fetch('https://corsanywhere.herokuapp.com/https://node-api091.herokuapp.com/');
           const data = await res.json();
           setExercises(data);
           console.log(data);
