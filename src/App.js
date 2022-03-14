@@ -1,4 +1,4 @@
-import {Switch, Route, Routes} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 import './App.css';
 import Navbar from './comps/Navbar';
 import CreateExercise from './pages/CreateExercise';
