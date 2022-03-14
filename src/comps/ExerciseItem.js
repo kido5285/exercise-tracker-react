@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ExerciseItem = ({exercise, onDeleteExercise, toggleHandler}) => {
     const deleteExercise = () => {
-        fetch(`https://corsanywhere.herokuapp.com/https://node-api091.herokuapp.com/delete`, {
+        fetch(`https://corsanywhere.herokuapp.com/https://node-backend091.herokuapp.com/delete`, {
             method: 'POST',
             body: JSON.stringify({
                 'id': exercise.id
@@ -17,7 +17,7 @@ const ExerciseItem = ({exercise, onDeleteExercise, toggleHandler}) => {
     }
 
     const toggleExercise = () => {
-        fetch(`https://corsanywhere.herokuapp.com/https://node-api091.herokuapp.com/update`, {
+        fetch(`https://corsanywhere.herokuapp.com/https://node-backend091.herokuapp.com/update`, {
             method: 'POST', 
             body: JSON.stringify({
                 'id': exercise.id
